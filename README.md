@@ -34,7 +34,7 @@ WARNING: always use a volume, otherwise you'll lose your wallet, blockchain and 
 
 ### Protecting wallet with a passphrase
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf walletlock`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf encryptwallet xxxxx`
 
 ### Unlocking wallet (for 2 minutes)
 
