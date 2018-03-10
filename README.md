@@ -18,24 +18,24 @@ WARNING: always use a volume, otherwise you'll lose your wallet, blockchain and 
 
 ### Send beacon
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf execute advertisebeacon`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf execute advertisebeacon`
 
 ### Get receiving address
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf getaccountaddress 0`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf getaccountaddress 0`
 
 ### Get balance
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf getbalance`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf getbalance`
 
 ### Send funds
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf sendtoaddress S7tpn1355Ju1JbSJ3arH7SRZrUR6Y5KNNv 5`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf sendtoaddress S7tpn1355Ju1JbSJ3arH7SRZrUR6Y5KNNv 5`
 
 ### Protecting wallet with a passphrase
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf walletlock`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf walletlock`
 
 ### Unlocking wallet (for 2 minutes)
 
-`docker exec gridcoin gridcoinresearchd -conf=/data/girdcoinresearchd.conf walletpassphrase xxxxx 120`
+`docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf walletpassphrase xxxxx 120`
