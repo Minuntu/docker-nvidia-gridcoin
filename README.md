@@ -10,7 +10,7 @@
 
 ## Run ( with nvidia Cuda, see https://github.com/NVIDIA/nvidia-docker )
 
-`docker run --name gridcoin --runtime=nvidia -ti --rm -e BAM_USERNAME="xxxx" -e BAM_PASSWORD="xxx" -e BAM_URL="http://xxxx" -v grcdata:/data minuntu/gridcoin`
+`docker run --name gridcoin --runtime=nvidia -ti --rm -e BAM_USERNAME="xxxx" -e BAM_PASSWORD="xxx" -e BAM_URL="http://xxxx" -v grcdata:/data minuntu/nvidia-gridcoin`
 
 WARNING: always use a volume, otherwise you'll lose your wallet, blockchain and boinc data !
 
