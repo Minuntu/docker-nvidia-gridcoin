@@ -15,7 +15,7 @@ RUN apt-get update && \
     apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:gridcoin/gridcoin-stable && \
     apt-get update && \
-    apt-get install -y gridcoinresearchd boinc-client supervisor && \
+    apt-get install -y pwgen gridcoinresearchd boinc-client supervisor && \
     apt-get clean  && rm -Rf /var/lib/apt/lists
 
 # Prepare data dir :
@@ -26,5 +26,7 @@ ADD supervisor.conf /etc/supervisor/conf.d/gridcoin.conf
 
 # Add config and startup scripts :
 ADD scripts /scripts
+
+EXPOSE 32749
 
 CMD /scripts/boot.sh
