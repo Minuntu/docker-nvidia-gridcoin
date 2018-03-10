@@ -16,7 +16,7 @@ RUN apt-get update && \
     add-apt-repository -y ppa:gridcoin/gridcoin-stable && \
     apt-get update && \
     apt-get install -y gridcoinresearchd boinc-client supervisor && \
-    apt-get clean
+    apt-get clean  && rm -Rf /var/lib/apt/lists
 
 # Prepare data dir :
 RUN mkdir /data
