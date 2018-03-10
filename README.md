@@ -39,3 +39,13 @@ WARNING: always use a volume, otherwise you'll lose your wallet, blockchain and 
 ### Unlocking wallet (for 2 minutes)
 
 `docker exec gridcoin gridcoinresearchd -conf=/data/gridcoinresearchd.conf walletpassphrase xxxxx 120`
+
+## Boinc only node
+
+There's a docker image available for Boinc only as well : https://github.com/Minuntu/docker-nvidia-boinc
+
+If you add any project to a solo image through your account manager, 
+make sure you also enable your project for your gridcoin+boinc node, 
+otherwise gridcoin won't detect ( and pay you ) for it.
+
+You can tick the "No new work" option in the project configuration if you don't want your boinc master to crunch data for a specific project but still detect it.
