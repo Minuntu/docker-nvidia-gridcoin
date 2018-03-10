@@ -3,7 +3,9 @@
 ## Minimal config
 
 `BAM_URL` : Url for the Boinc account manager ( boincstats, grcpool, ... )
+
 `BAM_USERNAME` : Your BAM username
+
 `BAM_PASSWORD` : Your BAM password
 
 ## Run ( with nvidia Cuda, see https://github.com/NVIDIA/nvidia-docker )
